@@ -1,0 +1,98 @@
+<!-- jQuery v1.11.1 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license -->
+
+<!--
+ - Bootstrap v3.3.5 (http://getbootstrap.com)
+ - Copyright 2011-2015 Twitter, Inc.
+ - Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ - normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../style/style.css"/>
+		<link rel="stylesheet" type="text/css" href="taskPage.css">
+	</head>
+	<body>
+		<div id="header">
+			<div id="profile" class="col-xs-4 text-center">
+				<div id="pic" class="clearfix">
+				</div>
+				<div id="link" class="clearfix">
+				</div>
+			</div>
+			<div id="title" class="col-xs-4 text-center">
+			</div>
+			<div id="stats" class="col-xs-4 text-center">
+				<div id="pay">
+					<p>Pay: </p>
+				</div>
+				<div id="time">
+					<p>Time: </p>
+				</div>
+			</div>
+		</div>
+		<div id="details" class="container block-centered">
+		</div>
+		<div id="picBlock">
+		  <div class="col-xs-12">
+		    <div class="row">
+		      <div class="col-xs-3">
+		        <div class="well">
+		          <img src='../../../resources/kid.jpg' class='img-circle'><span class="pull-right">Mowing can be a real job</span></img>
+		        </div>
+		      </div>
+		      <div class="col-xs-3">
+		        <div class="well">
+		          <img src='../../../resources/shoveling.jpg' class='img-circle'><span class="pull-right">Shoveling</span></img>
+		        </div>
+		      </div>
+		      <div class="col-xs-3">
+		        <div class="well">
+		          <img src='../../../resources/kid.jpg' class='img-circle'><span class="pull-right">Mowing</span></img>
+		        </div>
+		      </div>
+		      <div class="col-xs-3">
+		        <div class="well">
+		          <img src='../../../resources/tree_solid.png' class='img-circle'><span class="pull-right">Pruning</span></img>
+		        </div>
+		      </div>
+		    </div>    
+		  </div>
+		</div>
+		</div>
+		<div class="row">
+		  <div class="col-xs-12">
+		    <div class="row" id="ratings">
+		      <div class="col-xs-4">
+		        <div class="well">
+		          <h4><span class="pull-right" id="clarity">
+									  <!-- <input type="radio" name="rating" value="1"><i></i>
+									  <input type="radio" name="rating" value="2"><i></i>
+									  <input type="radio" name="rating" value="3"><i></i>
+									  <input type="radio" name="rating" value="4"><i></i>
+									  <input type="radio" name="rating" value="5"><i></i> -->
+									</span>Clarity</h4>
+		        </div>
+		      </div>
+		      <div class="col-xs-4">
+		        <div class="well">
+		          <h4><span class="pull-right" id="respect">Stars</span>Respect</h4>
+		        </div>
+		      </div>
+		      <div class="col-xs-4">
+		        <div class="well">
+		          <h4><span class="pull-right" id="followthrough">Stars</span>Follow-through</h4>
+		        </div>
+		      </div>
+		    </div>   
+		  </div>
+		</div>
+		<div id="button" class="block-centered col-xs-12">
+			<button type="button" class="btn btn-lg" onclick="loadApplicationConfirm()">Apply</button>
+		</div>
+ 	</body>
+	<script src="../../../api/dummydata.js"></script>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="taskPage.js" charset="UTF-8"></script>
+</html>
