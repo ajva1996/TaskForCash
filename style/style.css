@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 body{
 	background-color: #FFE09F;
 }
 .body {
+=======
+
+body {
+>>>>>>> origin/develop
 
 	background-color: #21686B;
 }
@@ -28,6 +33,12 @@ body{
     font-family: 'Damion', cursive;
     font-weight:400;
 }
+
+
+.btn:focus {
+	outline:0;
+}
+
 
 div{
 	font-family: 'Muli', sans-serif;
