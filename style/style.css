@@ -27,3 +27,40 @@
     font-weight:400;
 }
 
+div{
+	font-family: 'Muli', sans-serif;
+}
+#pageHeader{
+	position:fixed;
+	z-index:10;
+	top:0;
+	left:0;
+	right:0;
+	height:100px;
+	background-color:#21686B;
+	overflow:hidden;
+}
+.headerTree{
+	height:75px;
+	position:absolute;
+	bottom:0;
+	left:50px;
+	cursor:pointer;
+}
+.headerText{
+	color: #FFE09F;
+	font-size:60pt;
+	margin:0 auto;
+	width:450px;
+	cursor:pointer;
+
+
+}
+
+.red{
+	color:#B13936;
+	display:none;
+}
+.light{
+	color:#FFE09F;
+}

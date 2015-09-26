@@ -2,8 +2,19 @@ $(document).ready( function(){
     init();
 
     function init(){
-        console.log()
-        populatePanels(taskDetails)
+        populatePanels(taskDetails);
+        populateCheckboxes(taskDetails);
+        $(".headerTree, .headerText").hover(function(){
+            $(".headerTree.light")[0].style.display="none";
+            $(".headerText.red")[0].style.display="block";
+            $(".headerTree.red")[0].style.display="block";
+            $(".headerText.light")[0].style.display="none";
+        }, function(){
+            $(".headerTree.light")[0].style.display="block";
+            $(".headerText.red")[0].style.display="none";
+            $(".headerTree.red")[0].style.display="none";
+            $(".headerText.light")[0].style.display="block";
+        })
 
     }
     function populatePanels(data){
@@ -24,7 +35,23 @@ $(document).ready( function(){
         node.find("#categoryContainer")[0].innerText=data.category;
         node[0].details=data;
         node[0].style.zIndex=4;
-
+    }
+    function populateCheckboxes(data){
+        categories={};
+        for (var i = 0; i < data.length; i++){
+            categories[data[i].category]= data[i].category;
+        }
+        var parent= $("#checkboxContainer");
+        var node= $("#checkboxTemplate");
+        for (var property in categories) {
+            if (categories.hasOwnProperty(property)) {
+                var temp= node.clone(true);
+                var a= document.createElement("SPAN");
+                a.innerText= categories[property];
+                temp.find("#checkboxLabel")[0].appendChild(a);
+                parent[0].appendChild(temp[0]);
+            }
+        }
     }
 
 
