@@ -1,0 +1,41 @@
+/*.container {
+	background-color: #FFE09F;
+}	*/
+
+#topHalf {
+    position: absolute;
+    bottom: 50%;
+    left:0;
+    right: 0;
+    background-color:#21686B;
+    text-align:center;
+    color:#FFE09F;
+}
+
+
+
+#botHalf {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    right: 0%;
+    left: 0%;
+    background-color:#FFE09F;
+    text-align:center;
+    color:#FFE09F;
+}
+
+#botHalf h4 {
+	color: #21686B;
+}
+
+.btn {
+	margin-top: 100px;
+	background-color:#21686B;
+	color: #FFE09F;
+}
+
+.btn:hover {
+	background-color: #B13936;
+	color: #FFE09F;
+}

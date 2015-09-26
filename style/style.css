@@ -1,5 +1,5 @@
 
-.body {
+body {
 
 	background-color: #21686B
 }
@@ -25,5 +25,9 @@
 .tfcFont{
     font-family: 'Damion', cursive;
     font-weight:400;
+}
+
+.btn:focus {
+	outline:0;
 }
 
