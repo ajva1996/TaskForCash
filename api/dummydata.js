@@ -14,21 +14,18 @@ task= {
 };
 
 taskDetails= [{
-	details:{
 		title: "Spread 12 bags of mulch",
 		category: "landscaping",
 		time: "2.5",
 		pay: "20.25",
 		taskID: 223156
 	},{
-	details:{
 		title: "Spread 12 bags of mulch",
 		category: "landscaping",
 		time: "2.5",
 		pay: "20.25",
 		taskID: 223156
 	},{
-	details:{
 		title: "Spread 12 bags of mulch",
 		category: "landscaping",
 		time: "2.5",
