@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
         <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
-
+    <link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="../../../style/style.css">
         <link rel="stylesheet" href="mainPage.css">
@@ -12,6 +12,15 @@
 </head>
 
 <body>
+    <div id="pageHeader">
+        <div id="logoContainerParent" class="logoContainer">
+                <img class="headerTree light" src="../../../resources/tree_solid_light.png" onclick="location.href= '../../shared/split/split.html'" />
+                <div class="headerText light tfcFont noselect" onclick="location.href= '../../shared/split/split.html'"> Task for Cash</div>
+                <img class="headerTree red" src="../../../resources/tree_solid_red.png" onclick="location.href= '../../shared/split/split.html'" />
+                <div class="headerText red tfcFont noselect" onclick="location.href= '../../shared/split/split.html'"> Task for Cash</div>
+        </div>
+    </div>
+
     <div id="container" class="mainPage">
         <div id="filterContainer" class="container mainPage">
             <div id="filterWell" class="well well-lg">
@@ -24,39 +33,40 @@
                 </select>
                 <br />
                 <label for="sel1">Task Categories</label>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="">Landscaping</label>
-                </div>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="">Mowing</label>
-                </div>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" >Shoveling</label>
+                <div id="checkboxContainer">
                 </div>
                 <br />
                 <label for="sel1">Filter by rating:</label>
-                <select class="form-control" id="sel2" style="font-family: arial">
+                <select class="form-control" id="checkboxFilters" style="font-family: arial">
                     <option>5</option>
                     <option >4</option>
                     <option>3</option>
                     <option>2</option>
                     <option selected>1</option>
                 </select>
+                <br />
+                <button id="updateFilters">update</button>
             </div>
+
         </div>
-
-
         <div id="tasksContainer">
 
         </div>
     </div>
 
+
+
+    </div>
+
 </body>
 <div style="display:none">
+    <div id="checkboxTemplate" class="checkbox">
+        <label id="checkboxLabel"><input id="categoryCheckbox" type="checkbox" checked /></label>
+    </div>
     <div id="panelTemplate" class="panel panel-default taskListing" onclick="navigateToDetails(this)">
         <div class="panel-body task">
             <div id="titleContainer" class="taskLeft">
-                Body goes here Body goes hereBody goes hereBody goes hereBody goes hereBody goes hereBody goes hereBodyhereBody goes hereBody goes hereBody goes hereBody goes hereBody goes hereBody goes hereBody goes hereBody goes hereBody goes hereBody goes hereBody goes here
+
             </div>
             <div class="taskRight  noselect">
                 <div class="taskDetail head noselect">
@@ -68,15 +78,15 @@
                 </div>
                 <div class="taskDetail info">
                     <div id="paySpan" class="taskDetail">
-                        $50
+
                     </div>
                     <br />
                     <div id="timeSpan" class="taskDetail">
-                        $50
+
                     </div>
                     <br />
                     <div id="distSpan" class="taskDetail">
-                        5.0
+
                     </div>
                 </div>
             </div>
