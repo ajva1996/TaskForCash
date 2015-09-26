@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+        <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../../style/style.css">
+        <link rel="stylesheet" href="mainPage.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="../../../api/dummydata.js"></script>
+        <script src= "mainPage.js"></script>
+</head>
+
+<body>
+    <div id="container" class="mainPage">
+        <div id="filterContainer" class="container mainPage">
+            <div id="filterWell" class="well well-lg">
+                <label for="sel1">Show me tasks within:</label>
+                <select class="form-control" id="sel1">
+                    <option>1 mile</option>
+                    <option selected>2 miles</option>
+                    <option>5 miles</option>
+                    <option>10 miles</option>
+                </select>
+                <br />
+                <label for="sel1">Task Categories</label>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Landscaping</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Mowing</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="" >Shoveling</label>
+                </div>
+                <br />
+                <label for="sel1">Filter by rating:</label>
+                <select class="form-control" id="sel2" style="font-family: arial">
+                    <option>5</option>
+                    <option >4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option selected>1</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div id="tasksContainer">
+
+        </div>
+    </div>
+
+</body>
+<div style="display:none">
+    <div id="panelTemplate" class="panel panel-default taskListing" onclick="navigateToDetails(this)">
+        <div class="panel-body task">
+            <div id="titleContainer" class="taskLeft">
+                Body goes here Body goes hereBody goes hereBody goes hereBody goes hereBody goes hereBody goes hereBodyhereBody goes hereBody goes hereBody goes hereBody goes hereBody goes hereBody goes hereBody goes hereBody goes hereBody goes hereBody goes hereBody goes here
+            </div>
+            <div class="taskRight  noselect">
+                <div class="taskDetail head noselect">
+                    Pay:
+                    <br />
+                    Time (est):
+                    <br />
+                    Distance (mi.):
+                </div>
+                <div class="taskDetail info">
+                    <div id="paySpan" class="taskDetail">
+                        $50
+                    </div>
+                    <br />
+                    <div id="timeSpan" class="taskDetail">
+                        $50
+                    </div>
+                    <br />
+                    <div id="distSpan" class="taskDetail">
+                        5.0
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="categoryContainer" class="categoryContainer">Category</div>
+    </div>
+</div>
+</html>
