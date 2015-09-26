@@ -1,5 +1,5 @@
 
-body {
+.body {
 
 	background-color: #21686B
 }
@@ -13,8 +13,16 @@ body {
 	color: #B13936;
 }
 
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
 
-.tfcFont {
+.tfcFont{
     font-family: 'Damion', cursive;
     font-weight:400;
 }

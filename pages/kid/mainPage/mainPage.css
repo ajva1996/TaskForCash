@@ -1,0 +1,71 @@
+#container.mainPage{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.container.mainPage{
+    padding:10px;
+    padding-right:0;
+
+}
+
+#filterContainer{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    width:400px;
+}
+#tasksContainer{
+    position:absolute;
+    top:0;
+    left:400px;
+    bottom:0;
+    right:0;
+    width: calc(100% - 400px);
+    min-width:900px;
+    padding:10px;
+
+}
+.panel.panel-default.taskListing{
+    height:auto;
+}
+
+.taskRight{
+    float:right;
+    width:auto;
+}
+
+.taskLeft{
+    float:left;
+    width:calc(100% - 380px);
+    vertical-align: text-top;
+    font-size:14pt;
+
+}
+.taskDetail{
+    display:inline-block;
+    width:180px;
+    margin: 0 auto;
+    font-size:18pt;
+}
+.taskDetail.head{
+    font-weight:600;
+}
+.categoryContainer{
+    margin-top:-25px;
+    margin-left:10px;
+    font-size:16pt;
+    font-weight:600
+}
+#sel2{
+
+}
+
+.taskListing:hover{
+    cursor:pointer;
+    color:#B13936;
+
+}
