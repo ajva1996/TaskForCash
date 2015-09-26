@@ -1,13 +1,11 @@
-#container.mainPage{
-    position:absolute;
-    top:90px;
-    bottom:0;
-    left:0;
-    right:0;
+body{
+    background-color:#FFE09F;
+
 }
 .container.mainPage{
-    padding:10px;
+    padding:20px;
     padding-right:0;
+    background-color:#FFE09F;
 
 }
 
@@ -24,20 +22,25 @@
     left:400px;
     bottom:0;
     right:0;
-    width: calc(100% - 400px);
+    width: calc(100% - 440px);
     min-width:900px;
-    padding:10px;
 
 }
 .panel.panel-default.taskListing{
     height:auto;
+    background-color:white;
+    color:black;
 }
 
 .taskRight{
     float:right;
     width:auto;
 }
-
+.well{
+    background-color: #FFFFFF;
+    /*background-color:rgba(177, 57, 54, .4);*/
+    /*background-color:rgba(33, 104, 107, .1);*/
+}
 .taskLeft{
     float:left;
     width:calc(100% - 380px);

@@ -14,7 +14,7 @@ $(document).ready( function(){
             $(".headerText.red")[0].style.display="none";
             $(".headerTree.red")[0].style.display="none";
             $(".headerText.light")[0].style.display="block";
-        })
+        });
 
     }
     function populatePanels(data){

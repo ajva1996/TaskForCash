@@ -10,82 +10,42 @@
 	<title>Location</title>
 	<!--Load bootStrap-->
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
-		<!--Load CSS file for styling-->
+	<link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+
+	<!--Load CSS file for styling-->
 		<link rel="stylesheet" type="text/css" href="../../../style/style.css"/>
+		<link rel="stylesheet" type="text/css" href="location.css" />
 		<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+	<div id="pageHeader">
+		<div id="logoContainerParent" class="logoContainer">
+			<img class="headerTree light" src="../../../resources/tree_solid_light.png" onclick="location.href= '../../shared/split/split.html'" />
+			<div class="headerText light tfcFont noselect" onclick="location.href= '../../shared/split/split.html'"> Task for Cash</div>
+			<img class="headerTree red" src="../../../resources/tree_solid_red.png" onclick="location.href= '../../shared/split/split.html'" />
+			<div class="headerText red tfcFont noselect" onclick="location.href= '../../shared/split/split.html'"> Task for Cash</div>
+		</div>
+	</div>
+	<div id="container">
+		<div id="child">
 	<div class="pagination-centered">
-		<h1 class="title text-center container-fluid">Location</h1>
+		<h1 class="title text-center container-fluid">Find Tasks Near Me</h1>
 	</div>
 	<div class="text-center" id="form">
-		<form class="form-inline">
+		<div class="form">
 			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Address">
+				<input type="text" id="address" class="form-control" placeholder="Address">
 			</div>
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="City">
+			<div id="zipParent" class="form-group">
+				<input type="text" id="zip" class="form-control" placeholder="Zip">
 			</div>
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Zip">
-			</div>
-			<div class="form-group">
-				<select class="form-control">
-					<option>Alabama</option>
-					<option>Alaska</option>
-					<option>Arizona</option>
-					<option>Arkansas</option>
-					<option>California</option>
-					<option>Colorado</option>
-					<option>Connecticut</option>
-					<option>Delaware</option>
-					<option>Florida</option>
-					<option>Georgia</option>
-					<option>Hawaii</option>
-					<option>Idaho</option>
-					<option>Illinois</option>
-					<option>Indiana</option>
-					<option>Iowa</option>
-					<option>Kansas</option>
-					<option>Kentucky</option>
-					<option>Louisiana</option>
-					<option>Maine</option>
-					<option>Maryland</option>
-					<option>Massachussets</option>
-					<option>Michigan</option>
-					<option>Minnesota</option>
-					<option>Mississippi</option>
-					<option>Missouri</option>
-					<option>Montana</option>
-					<option>Nebraska</option>
-					<option>Nevada</option>
-					<option>New Hampshire</option>
-					<option>New Jersey</option>
-					<option>New Mexico</option>
-					<option>New York</option>
-					<option>North Carolina</option>
-					<option>North Dakota</option>
-					<option>Ohio</option>
-					<option>Oklahoma</option>
-					<option>Oregon</option>
-					<option>Pennsylvania</option>
-					<option>Rhode Island</option>
-					<option>South Carolina</option>
-					<option>South Dakota</option>
-					<option>Tennessee</option>
-					<option>Texas</option>
-					<option>Utah</option>
-					<option>Vermont</option>
-					<option>Virginia</option>
-					<option>Washington</option>
-					<option>West Virginia</option>
-					<option>Wisconsin</option>
-					<option>Wyoming</option>
-				</select>
-			</div>
-			<button type="submit" class="btn btn-default">Submit</button>
-		</form>
+
+
+			<button class="btn btn-default" onclick="search()">Search</button>
+		</div>
+	</div>
+	</div>
 	</div>
 </body>
 	<!--Load jQuery-->

@@ -4,13 +4,13 @@ $(document).ready( function(){
     function init(){
         console.log(2);
         $("#top").bind("click", function(){
-            createPosting();
+            gotoLocation();
         });
         $("#tree").bind("click", function(){
-            createPosting();
+            gotoLocation();
         });
         $("#bottom").bind("click", function() {
-            gotoLocation();
+            createPosting();
         });
     }
 
@@ -20,6 +20,6 @@ $(document).ready( function(){
         location.href= "../../adult/addTask/addTask.html";
     }
     function gotoLocation(){
-        location.href= "../../kid/mainPage/mainPage.html";
+        location.href= "../../kid/location/location.html";
     }
 });

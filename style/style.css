@@ -1,12 +1,14 @@
-
+body{
+	background-color: #FFE09F;
+}
 .body {
 
-	background-color: #21686B
+	background-color: #21686B;
 }
 
 .title {
 
-	color: #FFE09F;
+	color: #21686B;
 }
 
 #form {
@@ -48,7 +50,7 @@ div{
 	cursor:pointer;
 }
 .headerText{
-	color: #FFE09F;
+	color: #a7dbd8;
 	font-size:60pt;
 	margin:0 auto;
 	width:450px;
@@ -58,9 +60,16 @@ div{
 }
 
 .red{
-	color:#B13936;
+	color:#A82E08;
 	display:none;
 }
 .light{
 	color:#FFE09F;
+}
+#container{
+	position:absolute;
+	top:100px;
+	bottom:0;
+	left:0;
+	right:0;
 }

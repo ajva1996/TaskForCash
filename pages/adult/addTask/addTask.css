@@ -1,0 +1,17 @@
+#form{
+    width:400px;
+    margin:0 auto;
+    height:300px;
+}
+#container{
+    padding-top:100px;
+    background-color:#FFE09F
+}
+.numContainer {
+    display:inline-block;
+    width:190px;
+}
+#time, #pay{
+    width:170px;
+    margin:10px;
+}

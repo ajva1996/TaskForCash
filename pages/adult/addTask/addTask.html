@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<!--
+ - Bootstrap v3.3.5 (http://getbootstrap.com)
+ - Copyright 2011-2015 Twitter, Inc.
+ - Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ - normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css -->
+
+<html>
+<head>
+    <title>Location</title>
+    <!--Load bootStrap-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+
+    <!--Load CSS file for styling-->
+    <link rel="stylesheet" type="text/css" href="../../../style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="addTask.css" />
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <!--Load jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="addTask.js"></script>
+</head>
+
+<body>
+<div id="pageHeader">
+    <div id="logoContainerParent" class="logoContainer">
+        <img class="headerTree light" src="../../../resources/tree_solid_light.png" onclick="location.href= '../../shared/split/split.html'" />
+        <div class="headerText light tfcFont noselect" onclick="location.href= '../../shared/split/split.html'"> Task for Cash</div>
+        <img class="headerTree red" src="../../../resources/tree_solid_red.png" onclick="location.href= '../../shared/split/split.html'" />
+        <div class="headerText red tfcFont noselect" onclick="location.href= '../../shared/split/split.html'"> Task for Cash</div>
+    </div>
+</div>
+<div id="container">
+    <div id="child">
+        <div class="pagination-centered">
+            <h1 class="title text-center container-fluid">Post a New Task</h1>
+        </div>
+        <div class="text-center" id="form">
+            <div class="form">
+                <div class="form-group">
+                    <label for="title">Task Title</label>
+                    <textarea class="form-control" maxlength="140" rows="2" id="title"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="title">Task Description</label>
+                    <textarea class="form-control" maxlength="140" rows="5" id="description"></textarea>
+                </div>
+                <div id="timePayContainer">
+                    <div class="form-group numContainer">
+                        <label for="time">Time Estimate (hrs.):</label>
+                        <input type="number" min="0" class="form-control" id="time">
+                    </div>
+                    <div class="form-group numContainer">
+                        <label for="pay">Pay ($):</label>
+                        <input type="number" min="0" class="form-control" id="pay">
+                    </div>
+                </div>
+
+                <button class="btn btn-default" onclick="search()">Post</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
