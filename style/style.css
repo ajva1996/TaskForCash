@@ -1,4 +1,4 @@
-body{
+body {
 	background-color: #FFE09F;
 }
 
@@ -117,4 +117,10 @@ td.category{
 #ratingsTitle > h1{
 	font-weight:800;
 	padding-bottom:10px;
+}
+.dollar:before {
+	  content: '$';
+  }
+.mile:after {
+	content: 'mi.';
 }
