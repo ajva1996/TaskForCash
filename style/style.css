@@ -40,7 +40,6 @@ textarea{
 
 
 div{
-	font-family: 'Muli', sans-serif;
 	font-family: 'Karla', sans-serif;
 }
 #pageHeader{
@@ -108,7 +107,6 @@ td{
 	min-width:50px;
 }
 td.value{
-	text-aligh:right;
 	text-align:right;
 }
 td.category{

@@ -6,7 +6,6 @@
 }
 
 .proPic {
-	border:10px;
 	float:left;
 }
 
@@ -54,8 +53,6 @@
 	font-size:13pt;
 }
 
-.ratings {
-	float:right;
 }
 .body {
 	background-color:green;
