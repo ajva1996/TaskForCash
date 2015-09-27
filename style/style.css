@@ -7,6 +7,9 @@ body {
 	background-color: #21686B;
 }
 
+textarea{
+	resize:none;
+}
 .title {
 
 	color: #21686B;
@@ -79,4 +82,39 @@ div{
 	bottom:0;
 	left:0;
 	right:0;
+}
+
+.ratings.panel{
+	padding:10px;
+	width:350px;
+}
+#ratingsTitle{
+	text-align:center;
+	font-weight:900;
+}
+hr{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.cats-rats{
+	text-align:left;
+	width:260px;
+	font-size:16pt;
+	margin: 0 auto;
+	font-weight:700;
+}
+td{
+	min-width:50px;
+}
+td.value{
+	text-aligh:right;
+}
+td.category{
+	text-align:left;
+	padding-right:40px;
+	padding-bottom:15px;
+}
+#ratingsTitle > h1{
+	font-weight:800;
+	padding-bottom:10px;
 }
