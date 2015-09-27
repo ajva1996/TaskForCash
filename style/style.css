@@ -40,7 +40,7 @@ textarea{
 
 
 div{
-	font-family: 'Muli', sans-serif;
+	font-family: 'Karla', sans-serif;
 }
 #pageHeader{
 	position:fixed;
@@ -94,7 +94,7 @@ div{
 }
 hr{
 	margin-top:10px;
-	margin-bottom:10px;
+	margin-bottom:20px;
 }
 .cats-rats{
 	text-align:left;
@@ -107,7 +107,7 @@ td{
 	min-width:50px;
 }
 td.value{
-	text-aligh:right;
+	text-align:right;
 }
 td.category{
 	text-align:left;
