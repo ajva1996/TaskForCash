@@ -2,8 +2,6 @@ $(document).ready( function(){
     init();
 
     function init(){
-        populatePanels(taskDetails);
-        populateCheckboxes(taskDetails);
         $(".headerTree, .headerText").hover(function(){
             $(".headerTree.light")[0].style.display="none";
             $(".headerText.red")[0].style.display="block";
@@ -15,16 +13,32 @@ $(document).ready( function(){
             $(".headerTree.red")[0].style.display="none";
             $(".headerText.light")[0].style.display="block";
         });
+        $.ajax({
+            type: "GET",
+            url: "http://52.11.205.176:8080/api/task",
+            data: {hi:"hello from client"},
+            success: function(response) {
+                console.log(response)
+                //console.log(response);
+                populatePanels(response);
+                populateCheckboxes(response);
+
+            },
+            error:function(response){
+                console.log(response);
+            },
+
+        });
 
     }
     function populatePanels(data){
         var parent= document.getElementById("tasksContainer");
-        for (var i = 0; i < 15; i++){
+        for (var i = 0; i < data.length; i++){
             //var temp= document.getElementById("panelTemplate").cloneNode(true);
             var temp= $("#panelTemplate").clone(true);
             populateClone(temp, data[i]);
             parent.appendChild(temp[0]);
-            data[i+1]=data[i];
+
         }
     }
     function populateClone(node, data){
@@ -58,6 +72,6 @@ $(document).ready( function(){
 
 });
 function navigateToDetails(item){
-
-    location.href= "../../kid/taskPage/taskPage.html" + "?"+ item.details.taskID;
+    //console.log(item.details);
+    location.href= "../../kid/taskPage/taskPage.html" + "?"+ item.details.pay+item.details.time;
 }

@@ -20,8 +20,29 @@ $(document).ready( function(){
 });
 
 function search(){
-    var inputs= validateLocation();// validate inputs
-    location.href= "../../kid/mainPage/mainPage.html" + "?"+ inputs.address + '&' + inputs.zip;
+   // var inputs= validateLocation();// validate inputs
+    console.log("posting");
+    var data= {
+        title: $("#title")[0].value,
+        description: $("#description")[0].value,
+        pay: $("#pay")[0].value,
+        time: $("#time")[0].value,
+        category: $("#category")[0].value,
+    };
+    console.log(data);
+    $.ajax({
+        type: "POST",
+        url: "http://52.11.205.176:8080/api/task",
+        data: data,
+        success: function(response) {
+            console.log(response);
+        },
+        error:function(response){
+            console.log(response);
+        },
+
+    });
+    //location.href= "../../kid/mainPage/mainPage.html" + "?";//+ inputs.address + '&' + inputs.zip;
 
 }
 function validateLocation(){
