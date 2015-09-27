@@ -7,14 +7,52 @@
 
 .proPic {
 	border:10px;
+	float:left;
+}
+
+.basicInfo {
+	padding:10px;
+	width:320px;
+	height:257px;
+	margin-left:4%;
+	margin-right:4%;
+	margin-top:55px;
+}
+
+#name {
+	text-align:center;
+	font-weight:bold;
+	font-size:32pt;
+	padding:10px;
+}
+
+.ratings {
+	margin-top:55px;
+	width:270px;
+}
+
+.subInfo div {
+	text-align:center;
+	font-size:18pt;
+	padding:6px;
 }
 
 .bio {
 	margin-top:20px;
 	margin-left:15%;
 	margin-right:15%;
+	padding:15px 3%;
 }
 
+#bioTitle {
+	font-weight:bold;
+	font-size:30px;
+	padding:10px;
+}
+
+.bio p {
+	font-size:13pt;
+}
 
 .ratings {
 	float:right;

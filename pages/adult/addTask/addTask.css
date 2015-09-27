@@ -5,6 +5,7 @@
 }
 #container{
     padding-top:100px;
+    padding-top:45px;
     background-color:#FFE09F
 }
 .numContainer {
@@ -14,4 +15,8 @@
 #time, #pay{
     width:170px;
     margin:10px;
+}
+.pagination-centered h1 {
+	font-size: 35pt;
+	padding-bottom:40px;
 }
