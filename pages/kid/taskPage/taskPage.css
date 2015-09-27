@@ -1,85 +1,69 @@
+#contentContainer{
+    position:absolute;
+    top:100px;
+    padding:10px;
+    padding-top:20px;
+    left:0;
+    right:0;
 
-/*.star-rating{
-  font-size:0;
-  white-space:nowrap;
-  display:inline-block;
-  width:250px;
-  height:50px;
-  overflow:hidden;
-  position:relative;
-  background:
-      url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
-  background-size: contain;
-  i {
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 20%;
-    z-index: 1;
-    background: 
-        url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');  
-    background-size: contain;
-  }
 }
-  
-
-
-.choice{
-  position: fixed;
-  top: 0;
-  left:0;
-  right:0;
-  text-align: center;
-  padding: 20px;
-  display:block;
-}*/
-
-
-#stats {
-	border: 5px solid #FFE09F;
+#profilePictureContainer{
+    margin:20px;
+    float:left;
 }
-
-#profile {
-	border: 5px solid #FFE09F;
+#proPic{
+    height:220px;
+    width:220px;
 }
-
-.img-circle {
-    height: auto; 
-    width: auto; 
-    max-width: 150px; 
-    max-height: 150px;
-    min-height: 150px;
-    min-width: 150px;
+#name{
+    text-align:center;
+    font-size:18pt;
+    padding:5px;
 }
-
-#header {
-	max-width: auto;
-	max-height: 33%;
-	min-height: 33%;
-	min-width: auto;
+#jobInfoContainer{
+   float:right;
+    padding:20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    height:200px;
 }
-
-#details {
-	max-width: auto;
-	max-height: 33%;
-	min-height: 33%;
-	min-width: auto;
+#title{
+    display:inline-block;
+    width:calc(100% - 740px );
+    margin: auto 0;
+    padding:20px;
+    font-size:32pt;
+    text-align:center;
+    color:#B13936;
 }
+#bodyContainer{
+    clear:both;
+    margin-top:60px;
+    font-size:16pt;
+    padding:10px;
+    margin:30px;
 
-#picBlock {
-	background-color: #21686B;
+
 }
-
-button:hover {
-	background-color: #FFE09F;
+#buttonContainer{
+    margin:0 auto;
+    display:block;
+    text-align:center;
 }
-
-.row h4 {
-	color: #21686B;
+#applyButton{
+    margin: 0 auto;
 }
+.taskDetail.head{
+    width:240px;
+    font-size:26pt;
+}
+div.taskDetail.info{
+    width:160px;
+    font-size:26pt;
+}
+.taskDetail{
 
-a {
-	color: white;
+}
+.ratings.panel{
+    margin-left:30px;
 }

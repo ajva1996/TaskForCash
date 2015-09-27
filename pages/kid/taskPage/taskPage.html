@@ -10,89 +10,87 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+
 		<link rel="stylesheet" type="text/css" href="../../../style/style.css"/>
 		<link rel="stylesheet" type="text/css" href="taskPage.css">
+		<link rel="stylesheet" type="text/css" href="../mainPage/mainPage.css">
+		<script src="../../../api/dummydata.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="taskPage.js" charset="UTF-8"></script>
+
 	</head>
 	<body>
-		<div id="header">
-			<div id="profile" class="col-xs-4 text-center">
-				<div id="pic" class="clearfix">
-				</div>
-				<div id="link" class="clearfix">
-				</div>
-			</div>
-			<div id="title" class="col-xs-4 text-center">
-			</div>
-			<div id="stats" class="col-xs-4 text-center">
-				<div id="pay">
-					<p>Pay: </p>
-				</div>
-				<div id="time">
-					<p>Time: </p>
-				</div>
+		<div id="pageHeader">
+			<div id="logoContainerParent" class="logoContainer">
+				<img class="headerTree light" src="../../../resources/tree_solid_light.png" onclick="location.href= '../../shared/split/split.html'" />
+				<div class="headerText light tfcFont noselect" onclick="location.href= '../../shared/split/split.html'"> Task for Cash</div>
+				<img class="headerTree red" src="../../../resources/tree_solid_red.png" onclick="location.href= '../../shared/split/split.html'" />
+				<div class="headerText red tfcFont noselect" onclick="location.href= '../../shared/split/split.html'"> Task for Cash</div>
 			</div>
 		</div>
-		<div id="details" class="container block-centered">
-		</div>
-		<div id="picBlock">
-		  <div class="col-xs-12">
-		    <div class="row">
-		      <div class="col-xs-3">
-		        <div class="well">
-		          <img src='../../../resources/kid.jpg' class='img-circle'><span class="pull-right">Mowing can be a real job</span></img>
-		        </div>
-		      </div>
-		      <div class="col-xs-3">
-		        <div class="well">
-		          <img src='../../../resources/shoveling.jpg' class='img-circle'><span class="pull-right">Shoveling</span></img>
-		        </div>
-		      </div>
-		      <div class="col-xs-3">
-		        <div class="well">
-		          <img src='../../../resources/kid.jpg' class='img-circle'><span class="pull-right">Mowing</span></img>
-		        </div>
-		      </div>
-		      <div class="col-xs-3">
-		        <div class="well">
-		          <img src='../../../resources/tree_solid.png' class='img-circle'><span class="pull-right">Pruning</span></img>
-		        </div>
-		      </div>
-		    </div>    
-		  </div>
-		</div>
-		</div>
-		<div class="row">
-		  <div class="col-xs-12">
-		    <div class="row" id="ratings">
-		      <div class="col-xs-4">
-		        <div class="well">
-		          <h4><span class="pull-right" id="clarity">
-									  <!-- <input type="radio" name="rating" value="1"><i></i>
-									  <input type="radio" name="rating" value="2"><i></i>
-									  <input type="radio" name="rating" value="3"><i></i>
-									  <input type="radio" name="rating" value="4"><i></i>
-									  <input type="radio" name="rating" value="5"><i></i> -->
-									</span>Clarity</h4>
-		        </div>
-		      </div>
-		      <div class="col-xs-4">
-		        <div class="well">
-		          <h4><span class="pull-right" id="respect">Stars</span>Respect</h4>
-		        </div>
-		      </div>
-		      <div class="col-xs-4">
-		        <div class="well">
-		          <h4><span class="pull-right" id="followthrough">Stars</span>Follow-through</h4>
-		        </div>
-		      </div>
-		    </div>   
-		  </div>
-		</div>
-		<div id="button" class="block-centered col-xs-12">
-			<button type="button" class="btn btn-lg" onclick="loadApplicationConfirm()">Apply</button>
+		<div id="contentContainer">
+			<div id="profilePictureContainer">
+				<img id="proPic"src="../../../resources/kid.jpg" class="img-circle">
+				<div id="name" onclick="gotoProfile()">Jon Doe</div>
+			</div>
+			<div id="title">
+				Title goes hereTitle goes hereTitle goes hereTitle goes hereTitle goes hereTitle goes hereTitle goes hereTitle goes here
+			</div>
+			<div id="jobInfoContainer" class="panel">
+				<div class="taskRight  noselect">
+					<div class="taskDetail head noselect">
+						Pay:
+						<br />
+						Time (est):
+						<br />
+						Distance (mi.):
+					</div>
+					<div class="taskDetail info">
+						<div id="paySpan" class="taskDetail">
+							234
+						</div>
+						<br />
+						<div id="timeSpan" class="taskDetail">
+							2
+						</div>
+						<br />
+						<div id="distSpan" class="taskDetail">
+							5.1
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="bodyContainer" class="panel">
+				body goes herebody goes herebody goes herebody goes herebody goes herebody goes herebody goes herebody goes herebody goes herebody goes herebody goes herebody goes herebody goes herebody goes herebody goes herebody goes herebody goes herebody goes herebody goes herebody goes herebody goes here
+			</div>
+			<div class="ratings panel col-md-2">
+				<div id="ratingsTitle">
+					<h1>Ratings</h1>
+				</div>
+				<hr>
+				<div class="cats-rats">
+					<table>
+						<tr>
+							<td class="category">Clarity</td>
+							<td class="value">3.5</td>
+						</tr>
+						<tr>
+							<td class="category">Respect</td>
+							<td class="value">4.0</td>
+						</tr>
+						<tr>
+							<td class="category">Follow-Through</td>
+							<td class="value">5.0</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="buttonContainer">
+				<button id="applyButton" onclick="applyToJob()" class="btn btn-lg">Apply</button>
+			</div>
 		</div>
  	</body>
-	<script src="../../../api/dummydata.js"></script>
- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script type="text/javascript" src="taskPage.js" charset="UTF-8"></script>
+
 </html>
