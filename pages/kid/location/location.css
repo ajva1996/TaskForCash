@@ -7,3 +7,11 @@
     padding-top:100px;
     background-color:#FFE09F
 }
+.title.text-center{
+    padding-bottom:20px;
+    font-weight:700;
+    font-size:32pt;
+}
+#address, #zip{
+    font-weight:600;
+}
