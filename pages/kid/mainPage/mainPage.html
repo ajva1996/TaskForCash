@@ -9,6 +9,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src= "mainPage.js"></script>
+        <script src= "../../../api/dummydata.js"></script>
 </head>
 
 <body>
@@ -24,19 +25,31 @@
     <div id="container" class="mainPage">
         <div id="filterContainer" class="container mainPage">
             <div id="filterWell" class="well well-lg">
-                <label for="sel1">Show me tasks within:</label>
+                <h2 id="filterTitle">Filter Results:</h2>
+                <label for="sel1">Tasks Within:</label>
                 <select class="form-control" id="sel1">
                     <option>1 mile</option>
                     <option selected>2 miles</option>
                     <option>5 miles</option>
                     <option>10 miles</option>
+                    <option>20 miles</option>
                 </select>
                 <br />
-                <label for="sel1">Task Categories</label>
                 <div id="checkboxContainer">
+                <label for="sel1">Task Categories:</label>
+                        <ul id="cats">
+                            <li><input type="checkbox">Mowing Lawns</li>
+                            <li><input type="checkbox">Shoveling Snow</li>
+                            <li><input type="checkbox">Raking Leaves</li>
+                            <li><input type="checkbox">Baby Sitting</li>
+                            <li><input type="checkbox">Pet Sitting</li>
+                            <li><input type="checkbox">Car Washing</li>
+                            <li><input type="checkbox">Delivery</li>
+                            <li><input type="checkbox">Organizational</li>
+                            <li><input type="checkbox">Other</li>
+                        </ul>
                 </div>
-                <br />
-                <label for="sel1">Filter by rating:</label>
+                <label id="filterRating" for="sel1">Overall Rating:</label>
                 <select class="form-control" id="checkboxFilters" style="font-family: arial">
                     <option>5</option>
                     <option >4</option>
@@ -45,7 +58,8 @@
                     <option selected>1</option>
                 </select>
                 <br />
-                <button id="updateFilters">update</button>
+                <button id="updateFilters" class="btn btn-primary btn-lg btn-block">update</button>
+                </div>
             </div>
 
         </div>
