@@ -35,28 +35,50 @@
         <div class="pagination-centered">
             <h1 class="title text-center container-fluid">Post a New Task</h1>
         </div>
+
+
         <div class="text-center" id="form">
             <div class="form">
-                <div class="form-group">
-                    <h3><label for="title">Task Title</label></h3>
-                    <textarea class="form-control" maxlength="140" rows="2" id="title"></textarea>
+
+                <div class="form-group" id="category">
+                    <select class="form-control input-md">
+                        <option value="" disabled="disabled" selected="selected">Select Task Category</option>
+                        <option value="1">Mowing Lawns</option>
+                        <option value="2">Shoveling Snow</option>
+                        <option value="3">Raking Leaves</option>
+                        <option value="4">Baby Sitting</option>
+                        <option value="5">Pet Sitting</option>
+                        <option value="6">Car Washing</option>
+                        <option value="7">Delivery</option>
+                        <option value="8">Organizational</option>
+                        <option value="9">Other</option>
+                    </select>
                 </div>
+
                 <div class="form-group">
-                    <h3><label id="title2" for="title">Task Description</label></h3>
-                    <textarea class="form-control" maxlength="140" rows="5" id="description"></textarea>
+                    <!--<h3><label for="title">Task Title</label></h3>-->
+                    <textarea class="form-control input-lg" maxlength="140" rows="2" id="title" placeholder="Task Title"></textarea>
                 </div>
+
+
+                <div class="form-group">
+                    <!--<h3><label id="title2" for="title">Task Description</label></h3>-->
+                    <textarea class="form-control input-lg" maxlength="140" rows="5" id="description" placeholder="Task Description"></textarea>
+                </div>
+
                 <div id="timePayContainer">
                     <div class="form-group numContainer">
-                        <h3><label for="time">Est. Time (hours):</label></h3>
-                        <input type="number" min="0" class="form-control" id="time">
+                        <!--<h3><label for="time">Est. Time (hours):</label></h3>-->
+                        <input type="number" min="0" class="form-control input-lg" id="time" placeholder="Est. Time (hours)">
                     </div>
                     <div class="form-group numContainer">
-                        <h3><label id="title4" for="pay">Pay ($):</label></h3>
-                        <input type="number" min="0" class="form-control" id="pay">
+                        <!--<h3><label id="title4" for="pay">Pay ($):</label></h3>-->
+                        <input type="number" min="0" class="form-control input-lg" id="pay" placeholder="Pay ($)">
                     </div>
                 </div>
 
-                <button class="btn btn-default" onclick="search()">Post</button>
+
+                <button class="btn btn-primary btn-lg btn-block" onclick="search()">Post</button>
             </div>
         </div>
     </div>

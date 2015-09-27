@@ -11,7 +11,18 @@
     padding-bottom:20px;
     font-weight:700;
     font-size:32pt;
+    margin-top:10px;
 }
 #address, #zip{
     font-weight:600;
+    margin-bottom:17px;
+}
+
+.btn {
+	margin-top:20px;
+	background-color:#21686B;
+}
+
+.btn:hover {
+	background-color:#A82E08;
 }

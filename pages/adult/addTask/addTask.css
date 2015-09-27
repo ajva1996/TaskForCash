@@ -3,20 +3,45 @@
     margin:0 auto;
     height:300px;
 }
+
+.form-group {
+	padding: 4px 0px;
+	margin-bottom:10px;
+}
+
 #container{
     padding-top:45px;
     background-color:#FFE09F
 }
-.numContainer {
+
+#timePayContainer div {
     display:inline-block;
+    width:198px;
+}
+#time, #pay {
     width:190px;
 }
-#time, #pay{
-    width:170px;
-    margin:10px;
+
+#time {
+	margin-right:7px;
+}
+
+#pay {
+	margin-left:7px;
 }
 
 .pagination-centered h1 {
-	font-size: 35pt;
-	padding-bottom:40px;
+    padding-bottom:20px;
+    font-weight:700;
+    font-size:32pt;
+    font-family:inherit;
+}
+
+.btn {
+	margin-top:10px;
+	background-color:#21686B;
+}
+
+.btn:hover {
+	background-color:#A82E08;
 }
