@@ -20,7 +20,9 @@ body{
     float:left;
 }
 
-
+#titleContainer{
+    font-size: 30px;
+}
 
 #cats ul {
   margin: 0;
@@ -83,7 +85,7 @@ ul {
     display:inline-block;
     width:180px;
     margin: 0 auto;
-    font-size:26pt;
+    font-size:16pt;
     font-weight:600;
 
 }
@@ -107,6 +109,9 @@ ul {
 
 }
 
+#panelTemplate{
+    width: 800px;
+}
 .taskListing:hover{
     cursor:pointer;
     color:#B13936;
