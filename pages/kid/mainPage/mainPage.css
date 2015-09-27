@@ -52,12 +52,15 @@ body{
     display:inline-block;
     width:180px;
     margin: 0 auto;
-    font-size:18pt;
+    font-size:26pt;
+    font-weight:600;
+
 }
 .taskDetail.info{
     display:inline-block;
     width:120px;
     margin: 0 auto;
+    color:#B13936;
 
 }
 .taskDetail.head{
