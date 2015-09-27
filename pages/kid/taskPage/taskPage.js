@@ -55,6 +55,10 @@ $(document).ready(function() {
 	}
 });
 
+var applyToJob = function() {
+	location.href = "../applicationConfirm/applicationConfirm.html";
+}
+
 
 
 

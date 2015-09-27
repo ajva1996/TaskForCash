@@ -19,7 +19,14 @@
     text-align:center;
     font-size:18pt;
     padding:5px;
+
 }
+
+a:hover, a:focus {
+    color: #21686B;
+    text-decoration: underline;
+}
+
 #jobInfoContainer{
    float:right;
     padding:20px;
@@ -52,6 +59,12 @@
 }
 #applyButton{
     margin: 0 auto;
+    background-color: #21686B;
+    color: #FFE09F;
+}
+#applyButton:hover{
+    background-color: #B13936;
+    color: #FFE09F;
 }
 .taskDetail.head{
     width:240px;
