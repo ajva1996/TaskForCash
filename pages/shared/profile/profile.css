@@ -1,0 +1,24 @@
+.row {
+	margin-left:15%;
+	margin-right:15%;
+	margin-top:12%;
+
+}
+
+.proPic {
+	border:10px;
+}
+
+.bio {
+	margin-top:20px;
+	margin-left:15%;
+	margin-right:15%;
+}
+
+
+.ratings {
+	float:right;
+}
+.body {
+	background-color:green;
+}
