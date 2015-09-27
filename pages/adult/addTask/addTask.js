@@ -27,8 +27,9 @@ function search(){
         description: $("#description")[0].value,
         pay: $("#pay")[0].value,
         time: $("#time")[0].value,
-        category: $("#category")[0].value,
+        category: $("select.form-control")[0].value,
     };
+    console.log(data);
     console.log(data);
     $.ajax({
         type: "POST",
@@ -36,6 +37,7 @@ function search(){
         data: data,
         success: function(response) {
             console.log(response);
+            location.href="../postConfirm/postConfirm.html";
         },
         error:function(response){
             console.log(response);

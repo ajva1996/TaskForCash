@@ -21,8 +21,10 @@
 .btn {
 	margin-top:20px;
 	background-color:#21686B;
+    color: #FFE09F;
 }
 
 .btn:hover {
 	background-color:#A82E08;
+    color: #FFE09F;
 }
