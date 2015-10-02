@@ -15,6 +15,20 @@ $(document).ready( function(){
             $(".headerTree.red")[0].style.display="none";
             $(".headerText.light")[0].style.display="block";
         });
+        $.ajax({
+            type: "GET",
+            url: "http://52.11.205.176:8080/api/task",
+            data: {hi:"hello from client"},
+            success: function(response) {
+                response.JSON.parse(response);
+                console.log(response);
+                // populate panels(data)
+            },
+            error:function(response){
+                console.log(response);
+            },
+
+        });
 
     }
     function populatePanels(data){
