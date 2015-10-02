@@ -43,6 +43,11 @@ ul {
 
 .btn {
     background-color:#21686B;
+    color: #FFE09F;
+}
+
+.btn:hover {
+    color: #B13936;
 }
 
 #tasksContainer{

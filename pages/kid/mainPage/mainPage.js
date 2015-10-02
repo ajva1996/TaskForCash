@@ -83,14 +83,22 @@ function populateCheckboxes(data){
 function updateFilters(){
     curDataSet=JSON.parse(JSON.stringify(taskData));
     var filter=$("#sel1 option:selected" ).text();
+    var boxesChecked = $("#cats input:checked").text();
     filter= parseInt(filter);
     for (var i = 0; i < curDataSet.length; i++){
+        //Eliminate any tasks outside milage range
         if (parseFloat(curDataSet[i].distance) > filter){
             curDataSet.splice(i, 1);
             i--;
         }
+        //Eliminate all tasks whose label is not in boxesChecked
+        if (!boxesChecked.contains(curDataSet[i].category)) {
+            curDataSet.splice(i, 1);
+            i--;
+        }
     }
-    var boxes= $("#categoryCheckbox");
     populatePanels(curDataSet);
 }
+
+
 
